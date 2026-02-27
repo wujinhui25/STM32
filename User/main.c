@@ -60,24 +60,13 @@ int main (void)
     OLED_ShowString(4,5,"xx:xx:xx");
     OLED_ShowString(3,13,"Week");
 	
-//	OLED_ShowString(1,7,"DATE");
-//	OLED_ShowString(2,5,"xxxx-xx-xx");
-//	OLED_ShowString(3,7,"Time");
-//	OLED_ShowString(4,5,"xx:xx:xx");
-//	OLED_ShowString(3,13,"Week");
+
 
 	
 	while(1)
 	{
 		
-//		ReadMyRTC_time();
-//		OLED_ShowNum(2,5,MyRTC_Time[0],4);
-//		OLED_ShowNum(2,10,MyRTC_Time[1],2);
-//		OLED_ShowNum(2,13,MyRTC_Time[2],2);
-//		OLED_ShowNum(4,5,MyRTC_Time[3],2);
-//		OLED_ShowNum(4,8,MyRTC_Time[4],2);
-//		OLED_ShowNum(4,11,MyRTC_Time[5],2);
-//		OLED_ShowNum(4,15,MyRTC_Time[6],2);
+
 		shift_My_Mode();
 		if(My_Mode == 1)
 		{
