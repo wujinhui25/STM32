@@ -38,20 +38,20 @@ uint8_t Key_GetNum(void)
 {
 	uint8_t KeyNum = 0;		//定义变量，默认键码值为0
 	
-	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1) == 0)			//读PB1输入寄存器的状态，如果为0，则代表按键1按下
-	{
-		Delay_ms(5);											//延时消抖
-		while (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1) == 0);	//等待按键松手
-		Delay_ms(5);											//延时消抖
-		KeyNum = 2;												//置键码为2
-	}
-	
 	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_11) == 0)			//读PB11输入寄存器的状态，如果为0，则代表按键2按下
 	{
 		Delay_ms(5);											//延时消抖
 		while (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_11) == 0);	//等待按键松手
 		Delay_ms(5);											//延时消抖
 		KeyNum = 1;												//置键码为1
+	}
+	
+	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1) == 0)			//读PB1输入寄存器的状态，如果为0，则代表按键1按下
+	{
+		Delay_ms(5);											//延时消抖
+		while (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1) == 0);	//等待按键松手
+		Delay_ms(5);											//延时消抖
+		KeyNum = 2;												//置键码为2
 	}
 	
 	if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_5) == 0)			//读PB11输入寄存器的状态，如果为0，则代表按键2按下

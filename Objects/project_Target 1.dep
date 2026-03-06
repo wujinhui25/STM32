@@ -778,7 +778,7 @@ I (.\Library\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
 F (.\System\Delay.h)(0x6130920E)()
-F (.\System\MyRTC.c)(0x69A193F9)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Library -I .\System -I .\Hardware-I.\RTE\_Target_1-ID:\main.c\kile5MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\main.c\kile5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\myrtc.o --omf_browse .\objects\myrtc.crf --depend .\objects\myrtc.d)
+F (.\System\MyRTC.c)(0x69AAD28D)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Library -I .\System -I .\Hardware-I.\RTE\_Target_1-ID:\main.c\kile5MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\main.c\kile5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\myrtc.o --omf_browse .\objects\myrtc.crf --depend .\objects\myrtc.d)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\Start\core_cm3.h)(0x4D523B58)
 I (D:\main.c\kile5MDK\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -809,7 +809,7 @@ I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
 I (D:\main.c\kile5MDK\ARM\ARMCC\include\time.h)(0x588B8344)
 F (.\System\MyRTC.h)(0x699FD7D0)()
-F (.\System\MyRTCMode.c)(0x69A1E140)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Library -I .\System -I .\Hardware-I.\RTE\_Target_1-ID:\main.c\kile5MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\main.c\kile5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\myrtcmode.o --omf_browse .\objects\myrtcmode.crf --depend .\objects\myrtcmode.d)
+F (.\System\MyRTCMode.c)(0x69AAD879)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Library -I .\System -I .\Hardware-I.\RTE\_Target_1-ID:\main.c\kile5MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\main.c\kile5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\myrtcmode.o --omf_browse .\objects\myrtcmode.crf --depend .\objects\myrtcmode.d)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\Start\core_cm3.h)(0x4D523B58)
 I (D:\main.c\kile5MDK\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -876,7 +876,7 @@ I (Hardware\OLED_Font.h)(0x63087D24)
 F (.\Hardware\OLED.h)(0x63087D20)()
 F (.\Hardware\OLED_Font.h)(0x63087D24)()
 F (.\Hardware\Key.h)(0x615AC3F0)()
-F (.\Hardware\Key.c)(0x69A1DB33)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Library -I .\System -I .\Hardware-I.\RTE\_Target_1-ID:\main.c\kile5MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\main.c\kile5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\key.o --omf_browse .\objects\key.crf --depend .\objects\key.d)
+F (.\Hardware\Key.c)(0x69AACC0F)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Library -I .\System -I .\Hardware-I.\RTE\_Target_1-ID:\main.c\kile5MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\main.c\kile5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\key.o --omf_browse .\objects\key.crf --depend .\objects\key.d)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\Start\core_cm3.h)(0x4D523B58)
 I (D:\main.c\kile5MDK\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -906,7 +906,7 @@ I (.\Library\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
 I (.\System\Delay.h)(0x6130920E)
-F (.\User\main.c)(0x69A1D02A)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Library -I .\System -I .\Hardware-I.\RTE\_Target_1-ID:\main.c\kile5MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\main.c\kile5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\User\main.c)(0x69AAD7B0)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Library -I .\System -I .\Hardware-I.\RTE\_Target_1-ID:\main.c\kile5MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\main.c\kile5MDK\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\Start\core_cm3.h)(0x4D523B58)
 I (D:\main.c\kile5MDK\ARM\ARMCC\include\stdint.h)(0x588B8344)

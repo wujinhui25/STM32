@@ -32,7 +32,11 @@ void shift_My_Mode(void)
 			{
 				OLED_Clear();
 				My_Mode = 1;
-				
+		OLED_ShowString(1,7,"DATE");    
+    OLED_ShowString(2,5,"xxxx-xx-xx");
+    OLED_ShowString(3,7,"Time");    
+    OLED_ShowString(4,5,"xx:xx:xx");
+    OLED_ShowString(3,13,"Week");
 				
 			}
 		}
@@ -42,7 +46,6 @@ void shift_My_Mode(void)
 		}
 		else if(KeyNumber==3 && My_Mode==2)
 		{
-			My_Mode=2;
 			Timer_Runing=0;
 			My_Time_keep=0;
 			OLED_ShowString(2,5,"00:00:00");
@@ -63,7 +66,7 @@ void Timekeeping_Show(uint32_t Total_Time)
 //	OLED_ShowNum(2,11,sec,2);
 	// 显示时:分:秒（补0显示）
     OLED_ShowNum(2,5, hour, 2);
-    OLED_ShowChar(2,7, ':'); // 补充冒号，格式更清晰
+    OLED_ShowChar(2,7, ':'); 
     OLED_ShowNum(2,8, min, 2);
     OLED_ShowChar(2,10, ':');
     OLED_ShowNum(2,11, sec, 2);

@@ -10,7 +10,7 @@ void MyRTC_Init(void)
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_PWR,ENABLE); //使能PWR
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_BKP,ENABLE); //使能BKP
 	
-	PWR_BackupAccessCmd(ENABLE);// 启用或禁用对 RTC 和备份寄存器的访问。
+	PWR_BackupAccessCmd(ENABLE);// 启用（或禁用）对 RTC 和备份寄存器的访问。
 	
 	if (BKP_ReadBackupRegister(BKP_DR1) != 0xAA55)
 	{
@@ -51,9 +51,9 @@ void SetMyRTC_time(void)
 	time_date.tm_sec = MyRTC_Time[5];
 	time_date.tm_wday = MyRTC_Time[6]-1;
 	
-	time_cnt = mktime(&time_date)-8*60*60; //获取CNT秒数
+	time_cnt = mktime(&time_date)-8*60*60; //获取匹配的时间戳（CNT秒数）
 	
-	RTC_SetCounter(time_cnt);
+	RTC_SetCounter(time_cnt);//写入CNT计数器的值
 	RTC_WaitForLastTask();
 	
 }
@@ -63,7 +63,7 @@ void ReadMyRTC_time(void)
 {
 	time_t time_cnt;
 	struct tm time_date;
-	time_cnt=RTC_GetCounter()+8*60*60;
+	time_cnt=RTC_GetCounter()+8*60*60;//转化为北京时间，且保证时间戳匹配
 	time_date = *localtime(&time_cnt); //将读到的计数器CNT值转化为结构体的对应值
 	
 	/*将对读到的应值 写入数组*/
